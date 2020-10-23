@@ -10,7 +10,7 @@ import UIKit
 public enum Color {
 	/// Used to override the traits that the underlying UIColor should be resolved with.
 	/// In general, should not be modified
-	public static let wantedTraits = UITraitCollection()
+	public static var wantedTraits = UITraitCollection()
 	
 	private static func make(_ color: UIColor) -> UIColor {
 		if #available(tvOS 13.0, *) {
